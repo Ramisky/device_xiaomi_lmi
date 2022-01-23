@@ -43,5 +43,8 @@ $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Inherit from firmware repo
+$(call inherit-product, vendor/xiaomi-firmware/lmi/firmware.mk)
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/lmi/lmi-vendor.mk)
