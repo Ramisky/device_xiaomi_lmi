@@ -14,6 +14,8 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Inherit from lmi device
 $(call inherit-product, device/xiaomi/lmi/device.mk)
 
+TARGET_USES_AOSP_RECOVERY := true
+
 PRODUCT_NAME := aosp_lmi
 PRODUCT_DEVICE := lmi
 PRODUCT_MANUFACTURER := Xiaomi
