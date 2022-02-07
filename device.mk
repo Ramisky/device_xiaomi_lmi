@@ -43,6 +43,10 @@ PRODUCT_COPY_FILES += \
 # Inherit from sm8250-common
 $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    init.dcdimming.rc
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)

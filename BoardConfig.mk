@@ -33,5 +33,8 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
+# Sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # Inherit from the proprietary version
 include vendor/xiaomi/lmi/BoardConfigVendor.mk
