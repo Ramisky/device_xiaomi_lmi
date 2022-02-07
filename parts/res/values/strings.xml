@@ -13,6 +13,7 @@
 -->
 <resources>
 
+    <string name="htsr_title">DC Dimming</string>
     <string name="htsr_enable_title">DC Dimming</string>
     <string name="htsr_enable_summary">Reduce screen flicker by using a screen dimlayer</string>
 

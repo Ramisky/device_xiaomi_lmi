@@ -19,9 +19,11 @@
 package org.lineageos.devicesettings.dcdimming;
 
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
 
-public class DCDimmingSettingsActivity extends PreferenceActivity {
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
+import com.android.settingslib.collapsingtoolbar.R;
+
+public class DCDimmingSettingsActivity extends CollapsingToolbarBaseActivity {
 
     private static final String TAG_HTSR = "dcdimming";
 
@@ -29,7 +31,7 @@ public class DCDimmingSettingsActivity extends PreferenceActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        getFragmentManager().beginTransaction().replace(android.R.id.content,
+        getFragmentManager().beginTransaction().replace(R.id.content_frame,
                 new DCDimmingSettingsFragment(), TAG_HTSR).commit();
     }
 }
